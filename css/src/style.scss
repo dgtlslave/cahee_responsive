@@ -1,0 +1,204 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
+
+* {
+	transition: 0.3s;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+}
+
+.header {
+	background: #fff url(../img/photo.jpg) center no-repeat;
+	background-size: cover;
+	height: 100vh;
+
+	&__logo {
+		margin-top: 50px;
+	}
+
+	&__nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+
+		&-item {
+			list-style: none;
+			margin-left: 34px;
+			margin-top: 50px;
+
+			&-link {
+				text-decoration: none;
+				color: #262626;
+				font-size: 16px;
+				font-weight: 700;
+				line-height: 25px;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	&__title {
+		width: 100%;
+		font-size: 60px;
+		font-weight: 900;
+		line-height: 46px;
+		max-width: 290px;
+		margin-top: 195px;
+	}
+
+	&__text {
+		font-size: 17px;
+		font-weight: 300;
+		line-height: 27px;
+		margin-top: -14px;
+
+		&--position {
+			width: 100%;
+			max-width: 370px;
+		}
+	}
+
+	/* btn start */
+
+	&__box--style {
+		background: #ff6033;
+		border: 2px solid #ff6033;
+		margin-top: 28px;
+
+		&:hover {
+			background: #fff;
+		}
+	}
+
+	&__btn--style {
+		color: #fff;
+
+		&:hover {
+			color: #ff6033;
+		}
+	}
+
+	/* btn end */
+
+	&__box  {
+
+		&-image {
+			display: block;
+			margin: 0 auto;
+			margin-top: 230px;
+		}
+	}
+}
+
+/* About Us */
+
+.aboutus {
+	background: #27b1b0;
+
+	&__box {
+		min-width: 100%;
+
+		&-img {
+			min-width: 130%;
+			margin-left: -120px;
+		}
+	}
+
+	&__info-box {
+		margin-left: 85px;
+		margin-top: 181px;
+
+		&-title {
+			width: 100%;
+			color: #fff;
+			font-size: 90px;
+			font-weight: 700;
+			line-height: 70px;
+		}
+
+		&-text {
+			width: 100%;
+			color: #fff;
+			font-size: 17px;
+			font-weight: 300;
+			line-height: 27px;
+		}
+	}
+}
+
+/* Layout */
+.ba-container{
+	width: 90%;
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+
+.btn-box {
+	width: 100%;
+	max-width: 202px;
+	line-height: 53px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+
+	&-btn {
+		display: block;
+		font-size: 20px;
+		font-weight: 300;
+		line-height: 53px;
+		text-transform: uppercase;
+		text-decoration: none;
+		text-align: center;
+	}
+}
+
+
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
