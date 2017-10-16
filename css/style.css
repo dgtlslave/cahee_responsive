@@ -11,6 +11,8 @@ body {
   background: #fff url(../img/photo.jpg) center no-repeat;
   background-size: cover;
   height: 100vh;
+  position: relative;
+  padding-bottom: 30px;
   /* btn start */
   /* btn end */ }
   .header__logo {
@@ -40,13 +42,55 @@ body {
         font-weight: 700;
         line-height: 25px;
         text-transform: uppercase; }
+        .header__nav-item-link:hover {
+          border-top: 5px solid #fb5e3c;
+          padding-top: 8px; }
+    .header__nav-m {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin-top: 100px; }
+      .header__nav-m-item {
+        margin-top: 20px;
+        margin-left: 5px;
+        z-index: 999; }
+        .header__nav-m-item-link {
+          color: #fff;
+          font-size: 25px; }
+  .header__box {
+    height: 80vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
   .header__title {
     width: 100%;
     font-size: 60px;
     font-weight: 900;
     line-height: 46px;
-    max-width: 290px;
-    margin-top: 195px; }
+    margin-top: -44px; }
   .header__text {
     font-size: 17px;
     font-weight: 300;
@@ -58,7 +102,7 @@ body {
   .header__box--style {
     background: #ff6033;
     border: 2px solid #ff6033;
-    margin-top: 28px; }
+    margin-top: 10px; }
     .header__box--style:hover {
       background: #fff; }
   .header__btn--style {
@@ -67,12 +111,15 @@ body {
       color: #ff6033; }
   .header__box-image {
     display: block;
-    margin: 0 auto;
-    margin-top: 230px; }
+    position: absolute;
+    top: 90%;
+    left: calc(50% - 12px); }
 
 /* About Us */
+/* start img box */
 .aboutus {
-  background: #27b1b0; }
+  background: #27b1b0;
+  /* end img box */ }
   .aboutus__box {
     min-width: 100%; }
     .aboutus__box-img {

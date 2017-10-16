@@ -1,72 +1,78 @@
 
-@media screen and (max-width: 368px) {
-  .header {
-
-    &__logo {
-      margin-top: 20px;
-      margin-left: 60px;
-    }
-
-    &__nav {
-      margin-top: 50px;
-    }
-
-    &__title {
-      font-size: 30px;
-      margin-top: 50px;
-    }
-
-    &__text {
-      font-size: 15px;
-      line-height: 16px;
-    }
-
-    &__box {
-      visibility: hidden;
-    }
-
-  }
-
-  .btn-box {
-    max-width: 250px;
-    margin-top: 100px;
-  }
-}
-
 @media screen and (max-width: 768px) {
 
-  .header {
+.header {
 
-    &__logo {
-      margin-top: 20px;
-      margin-left: 80px;
+      &__m-overlay {
+    		display: none;
+    		position: fixed;
+    		z-index: 800;
+    		top: 0;
+    		height: 60px;
+    		left: 0;
+    		right: 0;
+    		background: rgba(0, 0, 0, .45);
+    		transition: 0.5s;
+    	}
+
+      &__btn {
+        background: url(../img/316-512.png) center no-repeat;
+        background-size: contain;
+        width: 35px;
+        height: 35px;
+        position: fixed;
+        top: 13px;
+        right: 30px;
+        z-index: 999;
+        cursor: pointer;
+      }
+
+      &__mobile {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, .75);
+      }
+
+      &__nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+
+        &-item {
+          margin-left: -25px;
+
+           &-link {
+             font-size: 35px;
+             color: #fff;
+           }
+        }
+      }
     }
 
-    &__nav {
-      margin-top: 50px;
-    }
+    .aboutus {
 
-    &__title {
-      font-size: 30px;
-      margin-top: 50px;
-    }
+      &__box {
 
-    &__text {
-      font-size: 15px;
-      line-height: 16px;
-    }
 
-    &__box {
-      visibility: hidden;
+        &-img {
+    			
+    		}
+      }
     }
-
   }
 
-  
 
-  .btn-box {
-    max-width: 300px;
-    margin-top: 170px;
+@media screen and (max-width: 368px) {
 
+  // .aboutus {
+  //
+  //   &__box {
+  //     display: none;
+  //   }
+  // }
   }
-}

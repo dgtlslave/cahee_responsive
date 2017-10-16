@@ -13,9 +13,15 @@ body{
 	background: #fff url(../img/photo.jpg) center no-repeat;
 	background-size: cover;
 	height: 100vh;
+	position: relative;
+	padding-bottom: 30px;
 
 	&__logo {
 		margin-top: 50px;
+	}
+
+	&__mobile {
+
 	}
 
 	&__nav {
@@ -35,8 +41,42 @@ body{
 				font-weight: 700;
 				line-height: 25px;
 				text-transform: uppercase;
+
+				&:hover {
+					border-top: 5px solid #fb5e3c;
+					padding-top: 8px;
+				}
 			}
 		}
+
+		&-m {
+			display: flex;
+      flex-direction: column;
+      margin-top: 100px;
+
+      &-item {
+        margin-top: 20px;
+        margin-left: 5px;
+
+        z-index: 999;
+
+        &-link {
+          color: #fff;
+          font-size: 25px;
+        }
+      }
+		}
+	}
+
+
+	&__box {
+		//max-width: 370px;
+		height: 80vh;
+	  display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		align-items: flex-start;
 	}
 
 	&__title {
@@ -44,8 +84,8 @@ body{
 		font-size: 60px;
 		font-weight: 900;
 		line-height: 46px;
-		max-width: 290px;
-		margin-top: 195px;
+		// max-width: 290px;
+		margin-top: -44px;
 	}
 
 	&__text {
@@ -65,7 +105,7 @@ body{
 	&__box--style {
 		background: #ff6033;
 		border: 2px solid #ff6033;
-		margin-top: 28px;
+		margin-top: 10px;
 
 		&:hover {
 			background: #fff;
@@ -82,17 +122,17 @@ body{
 
 	/* btn end */
 
-	&__box  {
-
-		&-image {
-			display: block;
-			margin: 0 auto;
-			margin-top: 230px;
-		}
+	&__box-image  {
+		display: block;
+		position: absolute;
+		top: 90%;
+		left: calc(50% - 12px);
 	}
 }
 
 /* About Us */
+
+/* start img box */
 
 .aboutus {
 	background: #27b1b0;
@@ -105,6 +145,8 @@ body{
 			margin-left: -120px;
 		}
 	}
+
+/* end img box */
 
 	&__info-box {
 		margin-left: 85px;
